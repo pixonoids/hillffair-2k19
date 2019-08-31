@@ -18,6 +18,11 @@ app.use(bodyParser.json({strict:false}));
 //Routing
 app.get('/register',function (req,res){
   console.log("okay");
+  res.sendFile(__dirname+"/register.html");
+});
+
+app.get('/registerPage',function (req,res){
+  console.log("okay");
   res.sendFile(__dirname+"/registerPage.html");
 });
 
