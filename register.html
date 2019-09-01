@@ -39,58 +39,58 @@
                   <!-- <div class="container-form-con"> -->
                     <div class="container-form">
                       <form class="contactForm" id="regForm" method="POST" action="/adduser">
-                        <div class="form-fieldset ui-input __first" id="half">
+                        <div class="form-fieldset ui-input __first required" id="half">
                           <input type="text" name="name" id="name" class="input">
                           <label for="name" class="label">
                             <span>Name</span>
                           </label> 
-                          <!-- <div class="invalid-message"></div> -->
+                          <div class="invalid-message"></div>
                         </div>
 
-                        <div  class="form-fieldset ui-input __first" id="half">
+                        <div  class="form-fieldset ui-input __first required" id="half">
                           <input type="text" name="team" id="team" class="input">
                           <label for="team" class="label">
                             <span>Team</span>
                           </label> 
-                          <!-- <div class="invalid-message"></div> -->
+                          <div class="invalid-message"></div>
                         </div>
               
-                        <div class="form-fieldset ui-input __first" id="half">
+                        <div class="form-fieldset ui-input __first required" id="half">
                           <div class="required">
                             <input type="text" name="email" id="email" class="input">
                             <label for="email" class="label">
-                              <span>Email</span>
+                              <span data-text="email">Email</span>
                             </label> 
-                            <!-- <div class="invalid-message"></div> -->
+                            <div class="invalid-message"></div>
                           </div>
                         </div>
-                        <div class="form-fieldset ui-input __first" id="half">
+                        <div class="form-fieldset ui-input __first required" id="half">
                           <input type="number" name="phone" id="phone" class="input">
                           <label for="phone" class="label">
                             <span>Phone Number</span>
                           </label> 
-                          <!-- <div class="invalid-message"></div> -->
+                          <div class="invalid-message"></div>
                         </div>
                         
-                        <div class="form-fieldset ui-input __first" id="half">
+                        <div class="form-fieldset ui-input __first required" id="half">
                           <div class="required">
                             <input type="text" name="college" id="college" class="input">
                             <label for="college" class="label">
                               <span>College</span>
                             </label> 
-                            <!-- <div class="invalid-message"></div> -->
+                            <div class="invalid-message"></div>
                           </div>
                         
                         </div>
-                        <div class="form-fieldset ui-input __first" id="half">
+                        <div class="form-fieldset ui-input __first required" id="half">
                           <input type="text" name="city" id="city" class="input">
                           <label for="city" class="label">
                             <span>City</span>
                           </label> 
-                          <!-- <div class="invalid-message"></div> -->
+                          <div class="invalid-message"></div>
                         </div>
                         
-                        <div class="form-fieldset ui-input __first" id="full">
+                        <div class="form-fieldset ui-input __first required" id="full">
                           <select id="eventsOpt" name="event" class="eventOption input">
                             <option value disabled selected></option>
                             <option value="Only Attend Festival">Only Attend Festival</option>
@@ -100,7 +100,7 @@
                           <label for="event" id="selectEvent" class="label">
                               <span>Reason for Register</span>
                             </label>
-                          <!-- <div class="invalid-message"></div> -->
+                          <div class="invalid-message"></div>
                         </div>
                         
                         <!-- <div class="formField">
@@ -117,6 +117,7 @@
                 </div>
         </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/validation.js"></script>
   <script type="text/javascript" src="js/register.js"></script>
 </body>
 </html>

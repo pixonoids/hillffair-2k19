@@ -98,8 +98,14 @@ body {
   opacity: 1;
 }
 
-@media (max-width: 900px){
+@media (max-width: 768px){
+  .container{
+    margin: 2rem;
+  }
   .container .container-form{
+    width: 100%;
+  }
+  #half{
     width: 100%;
   }
 }
@@ -214,18 +220,63 @@ body {
   background-position: 0% 50%;
 }
 
-.ui-input .input.error,
-.ui-input .input:invalid {
+.ui-input input:focus + label::after,
+.ui-input input.error + label::after,
+.ui-input input:invalid + label::after,
+.ui-input input.filled + label::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.ui-input input:focus + label span::after,
+.ui-input input.error + label span::after,
+.ui-input input:invalid + label span::after,
+.ui-input input.filled + label span::after {
+  background-image: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 0%);
+  background-position: 0% 50%;
+}
+
+.ui-input input.filled {
+  color: #ffffff;
+}
+.ui-input input.filled + label::after {
+  background-color: #ffffff;
+}
+.ui-input input.filled + label span::after {
+  background-image: linear-gradient(to right, #ffffff 50%, rgba(255, 255, 255, 0) 0%);
+  background-position: 0% 50%;
+}
+
+.ui-input input:focus {
+  color: #6EB1FF;
+}
+.ui-input input:focus + label::after {
+  background-color: #6EB1FF;
+}
+.ui-input input:focus + label span::after {
+  background-image: linear-gradient(to right, #6EB1FF 50%, rgba(255, 255, 255, 0) 0%);
+  background-position: 0% 50%;
+}
+
+.ui-input input.error,
+.ui-input input:invalid {
   color: #E66161;
 }
-.ui-input .input.error + label::after,
-.ui-input .input:invalid + label::after {
+.ui-input input.error + label::after,
+.ui-input input:invalid + label::after {
   background-color: #E66161;
 }
-.ui-input .input.error + label span::after,
-.ui-input .input:invalid + label span::after {
+.ui-input input.error + label span::after,
+.ui-input input:invalid + label span::after {
   background-image: linear-gradient(to right, #E66161 50%, rgba(255, 255, 255, 0) 0%);
   background-position: 0% 50%;
+}
+
+.invalid-message{
+	position: absolute;
+    font-size: 0.7em;
+    color: red;
+    top: -0.9rem;
+    right: 0;
 }
 
 .form-footer{
