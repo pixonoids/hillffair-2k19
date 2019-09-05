@@ -1,5 +1,12 @@
 $team_ht : 3em;
 
+$white : #f2f2f0;
+$orange : #ff5e3a;
+$bluel : #2c365d;
+$blued : #272e4f;
+
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -33,7 +40,8 @@ $team_ht : 3em;
 
 header{
 	height: 4em;
-	background: #445599;
+	background: linear-gradient(#E91E63,#9C27B0);
+	// background: #fff5 ;
 	position: sticky;
 	top: -2.5em;
 	z-index: 2;
@@ -49,9 +57,42 @@ header{
 
 .team{
 	height: $team_ht;
-	background: #2DA3DC;
+	// background: #2DA3DC;
+	font-size: 6em;
 	text-align: center;
 	line-height: $team_ht;
+	font-family: "kaushan script";
+}
+
+.nav{
+
+	text-align: center;
+	color: black;
+	position: sticky;
+	top: 0;
+	z-index: 3;
+	mix-blend-mode: color-dodge;
+
+	li{
+		display: inline-block;
+		width: 250px;
+		font-size: 1em;
+		// font-weight: 700;
+		color: hsl(336, 76%, 50%);
+		text-align: center;
+		
+		a{
+			text-decoration: none;
+			color: inherit;
+			cursor: pointer;
+		}
+
+		&:hover{
+			// color: #F72F0F;
+		}
+
+	}
+
 }
 
 .usr_type{
@@ -60,7 +101,7 @@ header{
 	font-size: 2em;
 	height: 2.5em;
 	line-height: 2.5em;
-	// width: 100px;
+	width: 5em;
 	display: inline-block;
 	bottom: -150px;
 	color: #bbbb;
@@ -71,11 +112,11 @@ header{
 	transform: rotate(-90deg);
 
 	&:hover + .container{
-		color: #FF1D1D;
+		color: #da2361;
 		background: #7CEFFF55;
 	}
 	&:hover{
-		color: red;
+		color: #da2361;
 	}
 }
 
@@ -86,6 +127,13 @@ header{
 	padding: 25px;
 
 	// font-family: montserrat;
+
+	.info {
+		width: 100%;
+		margin: 10px 10%;
+		color: #777;
+		font-style: italic;
+	}
 
 	.card {
 		margin: 10px;
@@ -121,6 +169,10 @@ header{
 			margin: 10px 0;
 			overflow: hidden;
 
+			&:hover + .card {
+				filter: grayscale(0);
+			}
+
 			.con {
 				transform: translate(0,-3.5em);
 				&:hover{
@@ -153,7 +205,7 @@ header{
 }
 
 .blank_space{
-	height: 3em;
+	height: 2em;
 }
 
 footer{
