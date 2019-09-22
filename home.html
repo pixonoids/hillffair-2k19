@@ -16,7 +16,7 @@
 		<div class="layer rellax l3" data-rellax-speed="-9" data-rellax-percentage=""></div>
 		<div class="layer rellax l4" data-rellax-speed="-8" data-rellax-percentage=""></div>
 		<div class="layer rellax l5" data-rellax-speed="-7" data-rellax-percentage=""></div>
-		<div class="layer rellax l6" data-rellax-speed="-5" data-rellax-percentage=""></div>
+		<div class="layer rellax l6" data-rellax-speed="-5" data-rellax-percentage="" id="castle"></div>
 		<div class="layer rellax l7" data-rellax-speed="-3" data-rellax-percentage=""></div>
 		<div class="layer rellax l8" data-rellax-speed="0" data-rellax-percentage=""></div>
 		<div class="layer rellax l9" data-rellax-speed="-4" data-rellax-percentage=""></div>
@@ -39,7 +39,7 @@
 	 	</div>
 	</div>
 
-	<div class="about">
+	<div class="about moon">
 		<div data-scroll>
 
 		<img src="images/blue/blue_foreground.png" alt="">
@@ -54,6 +54,12 @@
 
 
 	<script>
+		if(window.innerWidth<=980){
+			var castle = document.getElementById('castle');
+			castle.setAttribute('data-rellax-speed',"-10");
+		}
+
+
 		var rellax = new Rellax('.rellax');
 	</script>
 

@@ -1,8 +1,6 @@
 $parallax-height:120vh;
 
 
-
-
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -123,12 +121,12 @@ body{
 	background-size: cover !important;
 	background-repeat: no-repeat !important;
 }
-.about:nth-child(2n){
+.moon{
 	background: url(../images/blue/blue_background2.png);
 	background-attachment: fixed;
 	background-position: center;
 	// background-size: 100vw 100vh;
-	// transform: scale(1.1);
+	transform: scale(1.1) translateZ(-2px);
 	overflow-x: hidden;
 	width: 100%;
 	
@@ -143,6 +141,7 @@ body{
 
 .blank{
 	height: $parallax-height*1.2;
+	// background: #fff1;
 }
 
 // [data-scroll]{
@@ -183,5 +182,9 @@ body{
 
 	.about{
 		max-height: 1700px;
+	}
+
+	.moon{
+		transform: none;
 	}
 }
