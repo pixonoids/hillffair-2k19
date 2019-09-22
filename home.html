@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Halloween</title>
-	<link rel="stylesheet" type="text/css" href="./css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<script src="./js/scroll-out.min.js"></script>
 	<script src="./js/rellax.min.js"></script>
 	<!-- <script src="./js/sweetalert2.min.js"></script> -->
@@ -16,12 +16,12 @@
 		<div class="layer rellax l3" data-rellax-speed="-9" data-rellax-percentage=""></div>
 		<div class="layer rellax l4" data-rellax-speed="-8" data-rellax-percentage=""></div>
 		<div class="layer rellax l5" data-rellax-speed="-7" data-rellax-percentage=""></div>
-		<div class="layer rellax l6" data-rellax-speed="-5" data-rellax-percentage=""></div>
+		<div class="layer rellax l6" data-rellax-speed="-5" data-rellax-percentage="" id="castle"></div>
 		<div class="layer rellax l7" data-rellax-speed="-3" data-rellax-percentage=""></div>
 		<div class="layer rellax l8" data-rellax-speed="0" data-rellax-percentage=""></div>
 		<div class="layer rellax l9" data-rellax-speed="-4" data-rellax-percentage=""></div>
 		<div class="layer rellax l10" data-rellax-speed="3" data-rellax-percentage=""></div>
-		<div class="layer rellax l11" data-rellax-speed="-9" data-rellax-percentage=""></div>
+		<div class="layer rellax l11" data-rellax-speed="-10" data-rellax-percentage=""></div>
 		<div class="layer rellax l12" data-rellax-speed="-1" data-rellax-percentage="-1.6"></div>
 
 
@@ -39,10 +39,10 @@
 	 	</div>
 	</div>
 
-	<div class="about">
+	<div class="about moon">
 		<div data-scroll>
 
-		<img src="./images/blue/blue_foreground.png" alt="">
+		<img src="images/blue/blue_foreground.png" alt="">
 		</div>
 	</div>
 
@@ -54,16 +54,13 @@
 
 
 	<script>
-		var rellax = new Rellax('.rellax');
-		ScrollOut({
-			onShown: function(el) {
-				el.classList.add("animated");
+		if(window.innerWidth<=980){
+			var castle = document.getElementById('castle');
+			castle.setAttribute('data-rellax-speed',"-10");
+		}
 
-			},
-			onHidden: function(el){
-				el.classList.remove("animated");
-			}
-		});
+
+		var rellax = new Rellax('.rellax');
 	</script>
 
 </body>

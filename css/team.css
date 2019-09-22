@@ -21,6 +21,7 @@
 
 body {
   perspective: 5px;
+  background: #191919;
 }
 
 header {
@@ -41,6 +42,7 @@ header .logo {
 .team {
   height: 3em;
   font-size: 6em;
+  color: white;
   text-align: center;
   line-height: 3em;
   font-family: "kaushan script";
@@ -83,7 +85,7 @@ header .logo {
 }
 .usr_type:hover + .container {
   color: #da2361;
-  background: #7CEFFF55;
+  background: #ed143d11;
 }
 .usr_type:hover {
   color: #da2361;
@@ -142,6 +144,7 @@ header .logo {
   font-weight: 700;
   padding: 0.25em;
   height: 1.5em;
+  color: crimson;
 }
 .container .card .cap .desc {
   color: #888;
@@ -153,7 +156,8 @@ header .logo {
 .container .card .cap .num {
   height: 3.5em;
   font-weight: 700;
-  background: rgba(45, 163, 220, 0.3);
+  background: #ed143ddd;
+  color: white;
   line-height: 3.5em;
 }
 

@@ -41,6 +41,7 @@ $blued : #272e4f;
 body{
 	perspective: 5px;
 	// perspective: 25cm;
+	background: #191919;
 	
 }
 
@@ -65,6 +66,7 @@ header{
 	height: $team_ht;
 	// background: #2DA3DC;
 	font-size: 6em;
+	color: white;
 	text-align: center;
 	line-height: $team_ht;
 	font-family: "kaushan script";
@@ -123,7 +125,7 @@ header{
 
 	&:hover + .container{
 		color: #da2361;
-		background: #7CEFFF55;
+		background: #ed143d11;
 	}
 	&:hover{
 		color: #da2361;
@@ -194,6 +196,7 @@ header{
 				font-weight: 700;
 				padding: 0.25em;
 				height: 1.5em;
+				color: crimson;
 			}
 
 			.desc {
@@ -207,7 +210,8 @@ header{
 			.num {
 				height: 3.5em;
 				font-weight: 700;
-				background: fade-out(#2DA3DC,0.7);
+				background: #ed143ddd;
+				color: white;
 				line-height: 3.5em;
 			}
 		}
