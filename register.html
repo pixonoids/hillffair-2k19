@@ -40,7 +40,7 @@
                     <div class="container-form">
                       <form class="contactForm" id="regForm" method="POST" action="/adduser">
                         <div class="form-fieldset ui-input __first required" id="half">
-                          <input type="text" name="name" id="name" class="input">
+                          <input required type="text" name="name" id="name" class="input">
                           <label for="name" class="label">
                             <span>Name</span>
                           </label> 
@@ -48,7 +48,7 @@
                         </div>
 
                         <div  class="form-fieldset ui-input __first required" id="half">
-                          <input type="text" name="team" id="team" class="input">
+                          <input required type="text" name="team" id="team" class="input">
                           <label for="team" class="label">
                             <span>Team</span>
                           </label> 
@@ -57,7 +57,7 @@
               
                         <div class="form-fieldset ui-input __first required" id="half">
                           <div class="required">
-                            <input type="text" name="email" id="email" class="input">
+                            <input required type="email" name="email" id="email" class="input">
                             <label for="email" class="label">
                               <span data-text="email">Email</span>
                             </label> 
@@ -65,7 +65,7 @@
                           </div>
                         </div>
                         <div class="form-fieldset ui-input __first required" id="half">
-                          <input type="number" name="phone" id="phone" class="input">
+                          <input required type="number" name="phone" id="phone" class="input">
                           <label for="phone" class="label">
                             <span>Phone Number</span>
                           </label> 
@@ -74,7 +74,7 @@
                         
                         <div class="form-fieldset ui-input __first required" id="half">
                           <div class="required">
-                            <input type="text" name="college" id="college" class="input">
+                            <input required type="text" name="college" id="college" class="input">
                             <label for="college" class="label">
                               <span>College</span>
                             </label> 
@@ -83,7 +83,7 @@
                         
                         </div>
                         <div class="form-fieldset ui-input __first required" id="half">
-                          <input type="text" name="city" id="city" class="input">
+                          <input required type="text" name="city" id="city" class="input">
                           <label for="city" class="label">
                             <span>City</span>
                           </label> 
@@ -108,6 +108,7 @@
                           <textarea></textarea>
                         </div> -->
                         <div class="form-footer">
+                          <input type="reset" name="reset" class="btn" id="resetButton">
                           <input type="submit" name="submit" class="btn" id="submitButton">
                         </div>
               
