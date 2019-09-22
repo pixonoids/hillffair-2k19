@@ -35,6 +35,10 @@ app.get('/',function (req,res){
   console.log("okay");
   res.sendFile(__dirname+"/home.html");
 });
+app.get('/home',function (req,res){
+  console.log("okay");
+  res.sendFile(__dirname+"/_home.html");
+});
 app.get('/team',function (req,res){
   console.log("okay");
   res.sendFile(__dirname+"/team.html");

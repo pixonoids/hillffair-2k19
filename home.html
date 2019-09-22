@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Halloween</title>
+	<title>HILL'FFAIR 2k19</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Hill&#39;ffair 2K18:Halcyon Hues  -Canvas Painted with Memories . The annual cultural fest of National Institute of Technology Hamirpur">
+	<meta name="description" content="This Hillffair, NIT Hamirpur web application supports both offline and online mode, has a splash screen and add to home screen, just like any normal native app">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#e795f9">
+	<meta name="msapplication-TileColor" content="#e795f9">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="msapplication-TileImage" content="/images/logo.jpg">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="Hillffair19 progressive app">
+	<meta name="application-name" content="Hillffair19 progressive app">
+	<link rel="icon" href="./images/logo2k18.png">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
 	<script src="./js/scroll-out.min.js"></script>
 	<script src="./js/rellax.min.js"></script>
 	<!-- <script src="./js/sweetalert2.min.js"></script> -->
@@ -10,6 +24,27 @@
 
 </head>
 <body>
+	<!-- <div class="toggle example5">
+		<span></span>
+	</div> -->
+	<div class="navicon">
+		<div id="nav-icon2">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="menu">
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/register">Register</a></li>
+			<li><a href="/team">Team</a></li>
+			<li><a href="/sponsors">Sponsers</a></li>
+		</ul>
+	</div>
 	<div class="parallax">
 		<div class="layer rellax l1" data-rellax-speed="-9" data-rellax-percentage=""></div>
 		<div class="layer rellax l2" data-rellax-speed="-10" data-rellax-percentage=""></div>
@@ -26,17 +61,35 @@
 
 
 		<div class="layer rellax l13" data-rellax-speed="-1" data-rellax-percentage=""> 
-			<h1>Hillffair 2k19</h1>
-			<!-- <p>Horror of Hills</p> -->
+			<div class="logoCon">
+				<img src="./images/logo2k18.png" alt="hillffair">
+				<p>Horror of Hills</p>
+				<a class="registerBtn" href="/register">Register</a>
+			</div>
+			<div class="pixologo">
+				<img src="./images/pixoLogo.png" alt="pixonoids">
+			</div>
+			<div class="nithlogo">
+				<img src="./images/nithw.png" alt="nith">
+			</div>
 		</div>
 	</div>
 
 	<div class="blank"></div>
 
 	<div class="about">
-		<div data-scroll class="jackInTheBox fast">
-	 		<h1 align="center">About</h1>
-	 	</div>
+		<!-- <div data-scroll class="jackInTheBox fast"> -->
+		<h1 class = "aboutHeading" align="center">About</h1>
+			<!-- </div> -->
+		<div class="aboutText">
+			In the midst of all the chaos and commotion we have almost forgotten the golden period of our childhood. It is encapsulated forever in our memories.
+
+			So why not travel down the memory lane to those beautiful times.
+			This Hill'ffair, with the theme *Halcyon Hues* we take on a journey to reminisciate some of the most ineradicable moments we have lived!
+			Yes it's all in the past...but what if we could somehow relive it.
+			Let's bring those innocent, vivacious and felicitous times back into our present.
+			Let's come together to celebrate the momentousness of the halcyon hues and make it another memory to last a lifetime !
+		</div>
 	</div>
 
 	<div class="about moon">
@@ -46,13 +99,13 @@
 		</div>
 	</div>
 
-	<div class="about">
+	<div class="about p1">
 		<div data-scroll>
 		</div>
 
 	</div>
 
-
+	<script src="./js/menu.js"></script>
 	<script>
 		if(window.innerWidth<=980){
 			var castle = document.getElementById('castle');
