@@ -1,3 +1,8 @@
+@font-face {
+  font-family: GypsyCurse;
+  src: url("../fonts/GypsyCurse.woff") format("woff"); /* IE6-IE8 */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -90,15 +95,30 @@ body {
 .l13 {
   color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   font-family: "kaushan script";
 }
-.l13 h1 {
-  position: relative;
-  font-size: 5em;
-  top: -100px;
-  left: 200px;
+
+.l13 .logoCon{
+  position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.l13 img{
+  max-width: 16rem;
+  object-fit: contain;
+}
+
+.l13 p {
+  text-align: center;
+  font-size: 4rem;
+  font-family: GypsyCurse;
 }
 
 .about {
