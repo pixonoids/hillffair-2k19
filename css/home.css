@@ -190,6 +190,8 @@ body {
 
 .p1 {
   padding: 0 5rem;
+  background-image: url(../images/pumpkin.jpg);
+  background-size: cover;
 }
 
 .aboutHeading {
