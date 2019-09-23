@@ -3,7 +3,8 @@
 body {
   width: 100vw;
   min-height: 100vh;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   font-family: "Roboto", sans-serif;
   background-color: #5356ad;
   display: flex;
@@ -110,6 +111,9 @@ body {
   #half{
     width: 100%;
   }
+  .btn{
+    transform: scale(0.9);
+  }
 }
 
 .contactForm{
@@ -119,7 +123,7 @@ body {
   justify-content: space-between;
   padding: 2rem;
   /* align-content: center; */
-  background-color: #363E4A;
+  background-color: #191919;
 }
 .ui-input .input {
   font-family: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -127,10 +131,19 @@ body {
   background: none;
   padding: 16px 0 16px 0;
   font-size: 24px;
+  color: white;
   outline: 0;
   width: 100%;
   tap-highlight-color: rgba(0, 0, 0, 0);
   touch-callout: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus{
+    -webkit-box-shadow: 0 0 0 30px #191919 inset !important;
+    -webkit-text-fill-color: white !important;
 }
 
 .ui-input .input + label {
@@ -273,6 +286,11 @@ body {
   background-position: 0% 50%;
 }
 
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{
+  display: none;
+  -webkit-appearance:  none;
+}
+
 .invalid-message{
 	position: absolute;
     font-size: 0.7em;
@@ -284,7 +302,7 @@ body {
 .form-footer{
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -296,12 +314,22 @@ body {
   line-height: 1.5;
   text-transform: uppercase;
   letter-spacing: .0875em;
-  font-weight: 500;
+  font-weight: 700;
   color: #ffffff;
   font-family: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-radius: 100px;
+  border-radius: 20px;
   outline: 0;
   transition: background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1), color 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#resetButton{
+  background: #aaa1;
+  /* margin: 0 50px 0 0; */
+  transform: scale(0.9);
+}
+
+#resetButton:hover{
+  background: #f993;
 }
 
 .btn:focus, .btn:active,
