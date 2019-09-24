@@ -19,6 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
 	<script src="./js/scroll-out.min.js"></script>
 	<script src="./js/rellax.min.js"></script>
+	<script src="js/typed.min.js"></script>
 	<!-- <script src="./js/sweetalert2.min.js"></script> -->
 	<link rel="stylesheet" type="text/css" href="./js/animate.css">
 
@@ -35,6 +36,7 @@
 		<div class="layer rellax l3" data-rellax-speed="-9" data-rellax-percentage=""></div>
 		<div class="layer rellax l4" data-rellax-speed="-8" data-rellax-percentage=""></div>
 		<div class="layer rellax l5" data-rellax-speed="-7" data-rellax-percentage=""></div>
+		<img class="layer rellax l81" data-rellax-speed="-7" data-rellax-percentage="" src="images/elements/moon.svg">
 		<div class="layer rellax l6" data-rellax-speed="-5" data-rellax-percentage="" id="castle"></div>
 		<div class="layer rellax l7" data-rellax-speed="-3" data-rellax-percentage=""></div>
 		<div class="layer rellax l8" data-rellax-speed="0" data-rellax-percentage=""></div>
@@ -89,6 +91,7 @@
 	<div class="about p1">
 		<!-- <div data-scroll class="jackInTheBox fast"> -->
 		<h1 class = "aboutHeading" align="center">About</h1>
+		<img src="images/elements/broom.svg" class="art a1" alt="">
 			<!-- </div> -->
 		<div class="aboutText">
 			In the midst of all the chaos and commotion we have almost forgotten the golden period of our childhood. It is encapsulated forever in our memories.
@@ -107,8 +110,8 @@
 
 	<div class="about moon">
 		<div data-scroll>
-
 		<img src="images/blue/blue_foreground.png" alt="">
+		<div class="type">Lorem Ipsum</div>
 		</div>
 	</div>
 
@@ -124,6 +127,22 @@
 			var castle = document.getElementById('castle');
 			castle.setAttribute('data-rellax-speed',"-10");
 		}
+
+		var typed = new Typed('.type',{
+			strings: ["Hello World","This is ^100 typed js.","This is just a demo",":)","✈","😇","😈","Ha ha ha...!!","Thats it","Thats ^100 that","Thats ^100 Nothing Else","This is gonna repeat ^1000 again","This is gonna repeat what are waiting for.","ok bye..."] ,
+			typeSpeed: 30,
+			smartBackspace: true,
+			backSpeed: 20,
+			// shuffle: true,
+			backDelay: 1000,
+			loop:true,
+			// fadeOut: true,
+			// showCursor: true,
+			cursorChar: '>_',
+			// autoInsertCss:true,
+			startDelay: 1000
+
+		});
 
 
 		var rellax = new Rellax('.rellax');

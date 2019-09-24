@@ -3,7 +3,7 @@
   src: url("../fonts/GypsyCurse.woff") format("woff");
   /* IE6-IE8 */
 }
-@keyframes "movex" {
+@keyframes movex {
   from {
     transform: translate(-15em, 0);
   }
@@ -101,6 +101,12 @@ body {
   background-position: bottom;
 }
 
+.l81 {
+  width: 20%;
+  top: -10rem;
+  left: 15%;
+}
+
 .overlay {
   color: white;
   height: 126vh;
@@ -193,15 +199,21 @@ body {
   background-image: url(../images/pumpkin.jpg);
   background-size: cover;
 }
-
-.aboutHeading {
-  font-size: 4rem;
+.p1 .art {
+  width: 30%;
+  position: relative;
+  top: -2rem;
+}
+.p1 .aboutHeading {
+  font-size: 5rem;
   margin-bottom: 2rem;
+  /*font-family: "Arista Pro Trial";*/
 }
 
 .aboutText {
   position: relative;
   font-size: 2rem;
+  /*font-family: "Arista Pro Trial";*/
   line-height: 1.4;
   margin-bottom: 4rem;
   padding: 0 15rem;
@@ -280,6 +292,7 @@ body {
   background-position: center;
   transform: scale(1.0) translateZ(-2px);
   overflow-x: hidden;
+  font-family: "Montserrat";
   width: 100%;
   height: 90vh;
 }
@@ -287,6 +300,15 @@ body {
   width: 100%;
   position: absolute;
   bottom: -10%;
+}
+.moon .type {
+  font-size: 2em;
+  font-weight: 700;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
 }
 
 @media only screen and (max-width: 980px) {
@@ -346,9 +368,18 @@ body {
     max-height: 1700px;
   }
 
+  .p1 {
+    padding: 4em 2em;
+  }
+
+  .aboutHeading {
+    font-size: 2em;
+  }
+
   .aboutText {
-    font-size: 1.3em;
-    /* column-count: 1; */
+    font-size: 1.2em;
+    column-count: 1;
+    line-height: 1.3;
   }
 
   .moon {

@@ -18,6 +18,7 @@
   position: absolute;
   right: -2rem;
   top: 1rem;
+  position: fixed;
   transform: translate(-50%, 0);
   z-index: 100;
   background-color: #1b161659;
@@ -132,6 +133,7 @@
   background: #FFF;
   z-index: 5  0;
   transition: 0.5s;
+  z-index: 99;
 }
 .menu.active{
   left: 0;
