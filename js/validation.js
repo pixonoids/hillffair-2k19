@@ -145,10 +145,11 @@
                 //  $(".container-form .btn").click(function(){
                   // event.preventDefault();
                   $(".container").toggleClass("log-in");
+                  $(".contactForm :input").prop('disabled', true);
                 // });
-                 setTimeout(function(){
-                   window.location.reload(1);
-                 }, 2000);            
+                //  setTimeout(function(){
+                //    window.location.reload(1);
+                //  }, 2000);            
                }
              }
            }
