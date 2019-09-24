@@ -278,7 +278,7 @@ input:-webkit-autofill:focus{
 }
 .ui-input input.error + label::after,
 .ui-input input:invalid + label::after {
-  background-color: #E66161;
+  background-color: #ffffff;
 }
 .ui-input input.error + label span::after,
 .ui-input input:invalid + label span::after {
