@@ -53,12 +53,13 @@
 			<div class="logoCon">
 					<img src="./images/hillffair2k19.png" alt="hillffair">
 					<p>Horror of Hills</p>
+					<div class="minor">2<sup>nd</sup> - 4<sup>th</sup> Oct</div>
 					<a class="registerBtn" href="/register">Register</a>
 				</div>
-				<div class="pixologo">
+				<div class="pixologo" onclick='window.open("http://nith.ac.in/")' >
 					<img src="./images/pixoLogo.png" alt="pixonoids">
 				</div>
-				<div class="nithlogo">
+				<div class="nithlogo" onclick='window.open("https://www.facebook.com/Pixonoids/")'>
 					<img src="./images/nithw.png" alt="nith">
 				</div>
 			</div>
@@ -77,6 +78,20 @@
 		</div>
 	</div>
 	<div class="menu">
+		<div class="spookyCon">
+			<div class="spooky">
+				<div class="body">
+					<div class="eyes"></div>
+					<div class="mouth"></div>
+					<div class="feet">
+					<div></div>
+					<div></div>
+					<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="shadow"></div>
+		</div>
 		<ul>
 			<li><a href="/">Home</a></li>
 			<li><a href="/register">Register</a></li>
@@ -91,7 +106,9 @@
 	<div class="about p1">
 		<!-- <div data-scroll class="jackInTheBox fast"> -->
 		<h1 class = "aboutHeading" align="center">About</h1>
-		<img src="images/elements/broom.svg" class="art a1" alt="">
+		<img class="rellax broom" data-rellax-speed="3" data-rellax-percentage="" src="images/elements/broom.svg" alt="">
+		<img class="rellax rip" data-rellax-speed="2" data-rellax-percentage="" src="images/elements/rip.svg" alt="">
+		<img class="rellax hat" data-rellax-speed="1" data-rellax-percentage="" src="images/elements/hat.svg" alt="">
 			<!-- </div> -->
 		<div class="aboutText">
 			In the midst of all the chaos and commotion we have almost forgotten the golden period of our childhood. It is encapsulated forever in our memories.
@@ -112,6 +129,7 @@
 		<div data-scroll>
 		<img src="images/blue/blue_foreground.png" alt="">
 		<div class="type">Lorem Ipsum</div>
+		<a class="galleryLink" href="/gallery">See our Gallery</a>
 		</div>
 	</div>
 
@@ -129,7 +147,7 @@
 		}
 
 		var typed = new Typed('.type',{
-			strings: ["Hello World","This is ^100 typed js.","This is just a demo",":)","✈","😇","😈","Ha ha ha...!!","Thats it","Thats ^100 that","Thats ^100 Nothing Else","This is gonna repeat ^1000 again","This is gonna repeat what are waiting for.","ok bye..."] ,
+			strings: ["Dance","Music","Battle of Bands","Rythm"] ,
 			typeSpeed: 30,
 			smartBackspace: true,
 			backSpeed: 20,
