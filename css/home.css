@@ -109,7 +109,7 @@ body {
 
 .overlay {
   color: white;
-  height: 126vh;
+  height: 135vh;
   position: relative;
   font-family: "kaushan script";
 }
@@ -195,6 +195,7 @@ body {
 }
 
 .p1 {
+  min-height: 75vh; 
   padding: 0 5rem;
   background-image: url(../images/pumpkin.jpg);
   background-size: cover;
