@@ -6,7 +6,7 @@ body {
   min-height: 100vh;
   height: auto;
   font-family: "Roboto", sans-serif;
-  background-color: #5356ad;
+  background-color: #D14E17;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@ body {
   width: 90%;
   margin: auto;
   height: 35rem;
-  background-color: #999ede;
+  background-color: rgb(199, 141, 116);
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;

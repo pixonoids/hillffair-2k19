@@ -175,9 +175,9 @@ function validate(form){
                $("#city").val(""); 
                $('#eventOpt').selectedIndex=-1;
                $('.confirm').addClass('yes');
-               setTimeout(function(){
-                 window.location.reload(1);
-               }, 2000);            
+              //  setTimeout(function(){
+              //    window.location.reload(1);
+              //  }, 2000);            
              }
            }
          }

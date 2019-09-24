@@ -103,7 +103,7 @@ body {
 
 .overlay {
   color: white;
-  height: 140vh;
+  height: 126vh;
   position: relative;
   font-family: "kaushan script";
 }
@@ -178,7 +178,7 @@ body {
 }
 
 .about {
-  height: 130vh;
+  /* min-height: 90vh; */
   width: 100vw;
   position: relative;
   overflow: hidden;
@@ -190,6 +190,8 @@ body {
 
 .p1 {
   padding: 0 5rem;
+  background-image: url(../images/pumpkin.jpg);
+  background-size: cover;
 }
 
 .aboutHeading {
@@ -198,10 +200,12 @@ body {
 }
 
 .aboutText {
+  position: relative;
   font-size: 2rem;
   line-height: 1.4;
   margin-bottom: 4rem;
-  -moz-column-count: 2;
+  padding: 0 15rem;
+  /* -moz-column-count: 2;
   -moz-column-gap: 4rem;
   -moz-column-rule: 1px solid #eee;
   column-count: 2;
@@ -210,16 +214,74 @@ body {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
-  hyphens: auto;
+  hyphens: auto; */
+  background: url(../images/pumpkin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: left 50% top 0rem;
+}
+
+.pumpCon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pumpCon .rad{
+  width: 50%;
+  height: 50%;
+  background: radial-gradient(rgb(202, 131, 0), rgb(143, 93, 18));
+  animation: radial 1s ease-in-out infinite;
+  filter: blur(20px);
+  clip-path: circle(40%);
+  /* transition: all 1s; */
+}
+
+.pumpCon img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  /* height: 100%; */
+  object-fit: contain;
+}
+
+@keyframes radial{
+  0%{
+    opacity: 0;
+    /* background: radial-gradient(rgb(202, 131, 0), rgb(56, 34, 0)); */
+  }
+  50%{
+    opacity: 1;
+    /* background: radial-gradient(rgb(56, 34, 0), rgb(202, 131, 0)); */
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.p3{
+  height: 90vh;
 }
 
 .moon {
   background: url(../images/blue/blue_background2.png);
   background-attachment: fixed;
   background-position: center;
-  transform: scale(1.1) translateZ(-2px);
+  transform: scale(1.0) translateZ(-2px);
   overflow-x: hidden;
   width: 100%;
+  height: 90vh;
 }
 .moon img {
   width: 100%;
@@ -228,6 +290,19 @@ body {
 }
 
 @media only screen and (max-width: 980px) {
+
+  .p1{
+    padding: 0 .5rem;
+  }
+
+  .aboutText {
+    padding: 0 1rem;
+    background: url(../images/pumpkin.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left 50% top 0rem;
+  }
+
   .overlay .registerBtn {
     padding: 0.6rem;
   }
@@ -273,12 +348,103 @@ body {
 
   .aboutText {
     font-size: 1.3em;
-    column-count: 1;
+    /* column-count: 1; */
   }
 
   .moon {
     transform: none;
   }
+}
+
+.boo {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.pumpkinCon{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -200;
+}
+
+.spoopy {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.flame {
+  background-image:
+    radial-gradient(
+      circle closest-side,
+      yellow,
+      black
+    );
+  transform-origin:center center;
+  animation-name: fire;
+  animation-duration: 15ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+   animation-direction: alternate;
+  background-color: yellow;
+  width: 350px;
+  height: 350px;
+  border-radius: 250px;
+  margin: 0 auto;
+  z-index:99;
+  position: absolute;
+  left: 170px;
+  top: 60px;
+  margin: 0 auto;
+}
+
+.flame-orange {
+  background-image:
+    radial-gradient(
+      circle closest-side,
+      red,
+      transparent
+    );
+  transform-origin:center center;
+  animation-name: fire;
+  animation-duration: 15ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+   animation-direction: alternate;
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  margin: 0 auto;
+  z-index:99;
+  position: absolute;
+  left: 230px;
+  top: 130px;
+  margin: 0 auto;
+  opacity: .5;
+}
+
+@keyframes fire{
+  0%   {transform: rotate(-1deg);}
+  20%  {transform: rotate(1deg);}
+  40%  {transform: rotate(-1deg);}
+  60%  {transform: rotate(1deg) scaleX(1.01);}
+  80%  {transform: rotate(-2deg) scaleX(1.09);}
+  100% {transform: rotate(1deg);}
+}
+
+.pumpkin {
+  display: block;
+  margin: 0 auto;
+  width: 800px;
+  z-index: 1000;
+  position: relative;
 }
 
 /*# sourceMappingURL=home.css.map */
