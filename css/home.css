@@ -420,7 +420,7 @@ body {
 }
 
 
-
+/* 
 .boo {
   width: 80%;
   display: block;
@@ -494,7 +494,7 @@ body {
   margin: 0 auto;
   opacity: .5;
 }
-
+ */
 @keyframes fire{
   0%   {transform: rotate(-1deg);}
   20%  {transform: rotate(1deg);}
@@ -510,7 +510,7 @@ body {
   height: 50vh;
   max-height: 500px;
   background: linear-gradient(#000,#0008,#0005,#0009,#000a), url('../images/orange/witch.png');
-  /* background: black;   */
+  background: black;  
   background-size: cover;
   background-position: center;
   position: relative;

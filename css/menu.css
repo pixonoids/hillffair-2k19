@@ -183,10 +183,13 @@ ul li a{
   font-size: 2em;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.5s;
   color: #262626;
 }
 ul li a:hover{
-  background: #FFFC85
+  background: #FFFC8533;
+  border-radius: 20px;
+  color: #eeeeee;
 }
 
 .spookyCon{
@@ -319,6 +322,46 @@ ul li a:hover{
   }
 }
 
+
+li::after , li::before{
+  transition: all 0.5s;
+  display: inline-block;
+  opacity: 0;
+  height: 50px;
+  width: 50px;
+  margin: 0 1.5rem;
+}
+
+li::after{
+  transform: rotateY(180deg);
+}
+
+li:hover::after,li:hover::before{
+  opacity: 1;
+}
+
+.m1::after, .m1::before{
+  content: url('../images/icons/candle.svg');
+
+}
+
+.m2::after, .m2::before{
+  content: url('../images/icons/ghost.svg');
+
+}
+.m3::after, .m3::before{
+  content: url('../images/icons/skull.svg');
+
+}
+.m4::after, .m4::before{
+  content: url('../images/icons/vampire.svg');
+
+}
+.m5::after, .m5::before{
+  content: url('../images/icons/flask.svg');
+
+}
+
 @media only screen and (max-width: 980px){
   .spookyCon{
     display: none;
@@ -333,10 +376,12 @@ ul li a:hover{
   #nav-icon2 span{
     height: 5px;
   }
+  li::before,li::after {
+    /* font-size: 1rem; */
+    display: none;
+  }
   
 }
-
-
 
 
 
