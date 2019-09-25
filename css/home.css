@@ -510,7 +510,7 @@ body {
   height: 50vh;
   max-height: 500px;
   background: linear-gradient(#000,#0008,#0005,#0009,#000a), url('../images/orange/witch.png');
-  background: black;  
+  background: black;
   background-size: cover;
   background-position: center;
   position: relative;

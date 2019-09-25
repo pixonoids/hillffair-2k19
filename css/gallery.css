@@ -109,7 +109,7 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 100;
+  z-index: 10;
   /* background-color: #0000005b; */
   /* padding: 2rem; */
   font-size: 80px;
@@ -151,7 +151,7 @@
   color: white;
   font-size: 3rem;
   font-weight: bold;
-  z-index: 100;
+  z-index: 10;
   padding: 1rem 2rem;
   background-color: rgba(0, 0, 0, 0.404);
 }

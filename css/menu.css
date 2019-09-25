@@ -159,7 +159,7 @@
   left: 0;
   overflow: auto;
 }
-ul{
+.menu ul{
   margin: 0;
   padding: 0;
   /* position: absolute;
@@ -172,11 +172,11 @@ ul{
   /* letter-spacing: 1rem; */
   font-weight: bold;
 }
-ul li{
+.menu ul li{
   list-style: none;
 }
 
-ul li a{
+.menu ul li a{
   padding: 10px;
   display: inline-block;
   font-family: verdana;
@@ -186,7 +186,7 @@ ul li a{
   transition: all 0.5s;
   color: #262626;
 }
-ul li a:hover{
+.menu ul li a:hover{
   background: #FFFC8533;
   border-radius: 20px;
   color: #eeeeee;
@@ -537,13 +537,13 @@ li:hover::after,li:hover::before{
     height: 3px;
     width: 25px;
   }
-  ul.menu__list,
+  .menu ul.menu__list,
   div.menu__brand {
     float: none;
     width: 100%;
     min-height: 0;
   }
-  ul.menu__list--active,
+  .menu ul.menu__list--active,
   div.menu__brand--active {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
