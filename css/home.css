@@ -296,9 +296,6 @@ body {
   }
 }
 
-.p3{
-  height: 90vh;
-}
 
 .moon {
   background: url(../images/blue/blue_background2.png);
@@ -327,13 +324,15 @@ body {
 
 .p3{
     padding: 0;
+    height: 90vh;
+    background: black;
     overflow: visible;
 }
 .p3::before{
   content: "";
   width: 100vw;
   height: 20vh;
-  background: linear-gradient(#3e2f82,#20163d,#191919);
+  background: linear-gradient(#3e2f8222,#20163d,#000);
   position: absolute;
   filter: blur(3px);
   top: -10vh;
@@ -510,10 +509,10 @@ body {
   font-family: roboto;
   height: 50vh;
   max-height: 500px;
-  background: url('../images/orange/orange.png');
-  background: black;  
+  background: linear-gradient(#000,#0008,#0005,#0009,#000a), url('../images/orange/witch.png');
+  /* background: black;   */
   background-size: cover;
-  background-position: -20%;
+  background-position: center;
   position: relative;
   display: flex;
   flex-direction: column;
