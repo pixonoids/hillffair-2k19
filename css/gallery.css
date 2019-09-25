@@ -1,3 +1,19 @@
+@font-face {
+  font-family: GypsyCurse;
+  src: url("../fonts/GypsyCurse.woff") format("woff");
+  /* IE6-IE8 */
+}
+
+@font-face{
+  font-family: RiseInsidE;
+  src: url("../fonts/RiseInsidE-Regular.woff") format("woff");
+}
+
+@font-face{
+  font-family: Crucifixion;
+  src: url("../fonts/Crucifixion-Regular.woff") format("woff");
+}
+
 .slideshow {
   position: absolute;
   z-index: 1;
@@ -145,6 +161,8 @@
 
 .galleryHeading{
   position: absolute;
+  font-family: RiseInsidE;
+  letter-spacing: .3rem;
   top: 1rem;
   left: 50%;
   transform: translate(-50%, 0);

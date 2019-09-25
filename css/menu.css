@@ -42,7 +42,7 @@
   top: 1rem;
   position: fixed;
   transform: translate(-50%, 0);
-  z-index: 100;
+  z-index: 10000;
   background-color: #1b161659;
 }
 
@@ -162,8 +162,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  z-index: 99;
-  background-color:  #424f6f;
+  z-index: 9999;
+  background-color:  #E05912;
 }
 .menu.active{
   left: 0;
@@ -194,12 +194,12 @@
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.5s;
-  color: #262626;
+  color: #ffffff;
 }
 .menu ul li a:hover{
   background: #FFFC8533;
   border-radius: 20px;
-  color: #eeeeee;
+  color: #000;
 }
 
 .spookyCon{
@@ -207,7 +207,6 @@
   height: 400px;
   padding: 0;
   box-sizing: border-box;
-  background: #424f6f;
 }
 
 .spooky {
@@ -373,6 +372,17 @@ li:hover::after,li:hover::before{
 }
 
 @media only screen and (max-width: 980px){
+
+  #nav-icon2.open span:nth-child(5) {
+    left: 3px;
+    top: 15px;
+  }
+  
+  #nav-icon2.open span:nth-child(6) {
+    left: calc(50% - 3px);
+    top: 15px;
+  }
+
   .spookyCon{
     display: none;
   }

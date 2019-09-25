@@ -52,9 +52,10 @@ header .logo {
   text-align: center;
   color: black;
   position: sticky;
+  background: #191919;
+  padding: 1rem;
   top: 0;
   z-index: 3;
-  mix-blend-mode: color-dodge;
 }
 .nav li {
   display: inline-block;
@@ -103,9 +104,9 @@ header .logo {
   font-style: italic;
 }
 .container .card {
-  margin: 10px;
   width: 200px;
   position: relative;
+  margin: 1rem 4rem;
 }
 .container .card .pic {
   width: 100%;
