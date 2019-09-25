@@ -98,6 +98,7 @@
   };
   
        var regForm = document.getElementById('regForm');
+       var successMesg = document.getElementsByClassName('success');
        regForm.addEventListener('submit',function(e){
          var res = validate(this);
   
@@ -134,6 +135,7 @@
                else{
                  submitButton.disabled = false;
                  submitButton.value = "Registered";
+                 successMesg[0].style.display = "block";
                  $("#name").val("");
                  $("#team").val("");
                  $("#email").val("");

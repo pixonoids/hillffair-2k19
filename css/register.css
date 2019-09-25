@@ -100,7 +100,16 @@ body {
   opacity: 1;
 }
 
+.success{
+  color: white;  
+  display: none; 
+}
+
 @media (max-width: 768px){
+  .container.log-in .container-form {
+    left: 0%;
+  }
+
   .container{
     margin: 2rem;
     height: 50rem;
