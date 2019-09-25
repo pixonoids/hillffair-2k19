@@ -297,12 +297,11 @@ background-repeat: no-repeat;
   left: 0;
   width: 100vw;
   height: 20vh;
-  background: linear-gradient(#191919,#0e4b90,#0e4b9001);
+  background: linear-gradient(#191919,#0e4b90,#0e4b90a4);
   position: absolute;
-  filter: blur(3px);
+  filter: blur(5px);
   bottom: -10vh;
   z-index: 12;
-  transform: translate(-5rem,0);
 }
 .p1 .art {
   width: 30%;
@@ -481,7 +480,7 @@ background-repeat: no-repeat;
 }
 
 
-
+/* 
 .boo {
   width: 80%;
   display: block;
@@ -555,7 +554,7 @@ background-repeat: no-repeat;
   margin: 0 auto;
   opacity: .5;
 }
-
+ */
 @keyframes fire{
   0%   {transform: rotate(-1deg);}
   20%  {transform: rotate(1deg);}
@@ -572,6 +571,9 @@ background-repeat: no-repeat;
   /* background: linear-gradient(#000,#0008,#0005,#0009,#000a), url('../images/orange/witch.png'); */
   /* background: url('../images/orange/orange.png'); */
   /* background: black;   */
+  /* max-height: 500px;
+  background: linear-gradient(#000,#0008,#0005,#0009,#000a), url('../images/orange/witch.png'); */
+  background: black;
   background-size: cover;
   background-position: center;
   position: relative;

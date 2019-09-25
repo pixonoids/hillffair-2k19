@@ -177,7 +177,8 @@ footer {
 
 @media (max-width: 980px) {
   .card {
-    min-width: 350px;
+    min-width: 250px;
+
   }
   .card .cap {
     font-size: 2em;
@@ -188,6 +189,11 @@ footer {
     transform: none;
     bottom: 0;
     margin: 10px 0 10px 50px;
+  }
+
+  .team{
+    font-size: 3rem;
+
   }
 }
 
