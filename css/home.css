@@ -49,7 +49,7 @@ body {
   font-family: "kaushan script";
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background: black;
+  /* background: black; */
 }
 
 #wrapper{
