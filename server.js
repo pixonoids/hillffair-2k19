@@ -17,42 +17,33 @@ app.use(bodyParser.json({strict:false}));
 
 //Routing
 app.get('/register',function (req,res){
-  console.log("okay");
   res.sendFile(__dirname+"/register.html");
 });
 
 app.get('/registerPage',function (req,res){
-  console.log("okay");
   res.sendFile(__dirname+"/registerPage.html");
 });
 
 app.get('/events',function (req,res){
-  console.log("okay");
   res.sendFile(__dirname+"/events.html");
 });
 
 app.get('/',function (req,res){
-  console.log("okay");
   res.sendFile(__dirname+"/home.html");
 });
 app.get('/home',function (req,res){
-  console.log("okay");
   res.sendFile(__dirname+"/_home.html");
 });
 app.get('/gallery',function (req,res){
-  console.log("okay");
   res.sendFile(__dirname+"/gallery.html");
 });
 app.get('/team',function (req,res){
-  console.log("okay");
   res.sendFile(__dirname+"/team.html");
 });
 app.get('/lookback',function (req,res){
-  console.log("okay");
   res.sendFile(__dirname+"/lookback.html");
 });
 app.get('/sponsors',function (req,res){
-  console.log("okay");
   res.sendFile(__dirname+"/sponsors.html");
 });
 //Post Method

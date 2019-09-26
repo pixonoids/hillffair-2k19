@@ -24,19 +24,22 @@
 // //   window.scrollTo(0, 0);
 // // }
 
-// function navbar(){
-//   if(!navbarActive){
-//     console.log('clicked open');
-//     menu[0].style.left = '0';
-//     toggleBtn.classList.add('open');
-//     navbarActive =true;
-//     // window.addEventListener('scroll', noScroll);
-//   }  else{
-//     console.log('clicked close');
+var toggleBtn = document.querySelector('#nav-icon2');
+			var menu = document.querySelectorAll('.menu');
+			let navbarActive = false;
+			function navbar(){
+			if(!navbarActive){
+				console.log('clicked open');
+				menu[0].style.left = '0';
+				toggleBtn.classList.add('open');
+				navbarActive =true;
+				// window.addEventListener('scroll', noScroll);
+			}  else{
+				console.log('clicked close');
 
-//     navbarActive=false;
-//     menu[0].style.left = '-100%';
-//     toggleBtn.classList.remove('open');
-//     // window.removeEventListener('scroll', noScroll);
-//   }
-// }
+				navbarActive=false;
+				menu[0].style.left = '-100%';
+				toggleBtn.classList.remove('open');
+				// window.removeEventListener('scroll', noScroll);
+			}
+			}
