@@ -57,8 +57,8 @@ body {
   width: 100%;
   overflow: visible;
   padding-bottom: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
+/*   padding-left: 5px;
+  padding-right: 5px; */
   background-color: #191919;
 }
 
@@ -98,7 +98,9 @@ background-repeat: no-repeat;
           perspective-origin: center;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  position: relative;
+  position: absolute;
+  height: 135vh;
+  width: 100vw;
   scroll-behavior: smooth;
 }
 
@@ -206,6 +208,7 @@ background-repeat: no-repeat;
 .overlay p {
   text-align: center;
   font-size: 5rem;
+  transform: scale(1.2,1);
   font-family: GypsyCurse;
   margin: 1.4rem 0;
 }
@@ -213,9 +216,9 @@ background-repeat: no-repeat;
 .overlay .minor{
   font-size: 1.8rem;
   font-weight: bold;
-  letter-spacing: .5rem;
+  letter-spacing: .2rem;
   text-align: center;
-  font-family: GypsyCurse;
+  font-family: "kaushan script",roboto,arial;
   margin-bottom: .5rem;
 }
 
@@ -353,6 +356,7 @@ background-repeat: no-repeat;
   position: absolute;
   -webkit-filter: blur(5px);
           filter: blur(5px);
+  transform: scale(1.1);
   bottom: -10vh;
   z-index: 12;
 }
@@ -376,7 +380,7 @@ background-repeat: no-repeat;
 
 .aboutCon{
   position: relative;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   line-height: 1.4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -537,6 +541,7 @@ background-repeat: no-repeat;
   position: absolute;
   bottom: 15%;
   font-size: 2.5rem;
+  border-radius: 10px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
@@ -573,6 +578,7 @@ background-repeat: no-repeat;
   position: absolute;
   -webkit-filter: blur(3px);
           filter: blur(3px);
+  transform: scale(1.1);
   top: -5vh;
   z-index: 12;
   /* transform: translate(-5rem,0); */
@@ -700,7 +706,7 @@ background-repeat: no-repeat;
 }
 
 .footer .social{
-  margin-top: 6rem;
+  margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -717,18 +723,18 @@ background-repeat: no-repeat;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   align-items: center;
-  padding: 0 8rem;
+  /* padding: 0 8rem; */
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
+  width: 70%;
 }
 
 .i{
   width: 10%;
   cursor: pointer;
-  font-family: GypsyCurse;
-  font-size: 3rem;
-  letter-spacing: .8rem;
+  font-family: Crucifixion;
+  font-size: 1rem;
+  letter-spacing: .3rem;
 }
 
 .i img{
@@ -740,8 +746,9 @@ background-repeat: no-repeat;
 .made{
   cursor: pointer;
   font-family: RiseInsidE;
-  letter-spacing: .6rem;
+  letter-spacing: .2rem;
   font-weight: bold;
+  font-size: 1rem;
 }
 /* .footer .social  > *{
   width: 100px;
@@ -794,7 +801,7 @@ background-repeat: no-repeat;
     width: 8rem;
   }
 
-  .p1{
+/*   .p1{
     padding: 0 .5rem;
   }
   .p1::after{
@@ -802,7 +809,7 @@ background-repeat: no-repeat;
         -ms-transform: translate(-2rem,0);
             transform: translate(-2rem,0);
   }
-
+ */
   .overlay .registerBtn {
     padding: 0.6rem;
   }
@@ -882,25 +889,38 @@ background-repeat: no-repeat;
     font-size: 1rem;
     bottom: 3%;
     padding:1rem 1rem;
+    margin: 0 auto;
+    transform: translate(-50%, -9rem);
+    mix-blend-mode: difference;
   }
 
   .footer{
-    height: 50rem;
+    height: 30rem;
   }
 
   .footer .social{
     /* flex-direction: column; */
-    margin-top: 6rem;
+    margin-top: 5rem;
   }
 
   .i{
-    width: 90%;
+    font-family: roboto;
+    letter-spacing: 0;
+
+    width: 40%;
+    position: relative;
     margin: .9rem 0;
+  }
+  .i img{
+    width: 80%;
   }
 
   .made{
+    font-family: roboto;
+    letter-spacing: 0;
+
     margin: 1rem 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
     letter-spacing: .2rem;
   }
 }
