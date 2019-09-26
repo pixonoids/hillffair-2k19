@@ -22,7 +22,7 @@
 	<script src="js/typed.min.js"></script>
 	<!-- <script src="./js/sweetalert2.min.js"></script> -->
 	<link rel="stylesheet" type="text/css" href="./js/animate.css">
-	<script src="./js/menu.js"></script>
+	<!-- <script src="./js/menu.js"></script> -->
 </head>
 <body>
 	<!-- <div class="toggle example5">
@@ -67,7 +67,7 @@
 
 
 <!-- Navbar --> 
-		<div class="navicon">
+		<div class="navicon" onclick="navbar()">
 		<div id="nav-icon2">
 			<span></span>
 			<span></span>
@@ -170,6 +170,28 @@
 
 		<div class="made" onclick='window.open("http://nith.ac.in/")'>Made with 💗 by pixonoids</div>
 	</div>
+
+	<script>
+			var toggleBtn = document.querySelector('#nav-icon2');
+			var menu = document.querySelectorAll('.menu');
+			let navbarActive = false;
+			function navbar(){
+			if(!navbarActive){
+				console.log('clicked open');
+				menu[0].style.left = '0';
+				toggleBtn.classList.add('open');
+				navbarActive =true;
+				// window.addEventListener('scroll', noScroll);
+			}  else{
+				console.log('clicked close');
+
+				navbarActive=false;
+				menu[0].style.left = '-100%';
+				toggleBtn.classList.remove('open');
+				// window.removeEventListener('scroll', noScroll);
+			}
+			}
+		</script>
 	<script>
 		if(window.innerWidth<=980){
 			var castle = document.getElementById('castle');
