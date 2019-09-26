@@ -7,9 +7,15 @@ body {
   height: auto;
   font-family: "Roboto", sans-serif;
   background-color: #D14E17;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #half{
@@ -31,7 +37,6 @@ body {
   margin: auto;
   height: 35rem;
   background-color: rgb(199, 141, 116);
-  -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -49,22 +54,35 @@ body {
   height: 100%;
 }
 .container .container-forms .container-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
 }
 .container .container-forms .container-info .info-item {
   text-align: center;
   width: 50%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
   opacity: 1;
-  -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -72,7 +90,8 @@ body {
 
 .info-item img{
   width: 50%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 1.5rem 0;
 }
 
@@ -86,8 +105,8 @@ body {
   height: 100%;
   /* transform: scaleY(1.1); */
   background-color: #fff;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-  -moz-transition: all 0.5s;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -121,15 +140,22 @@ body {
     width: 100%;
   }
   .btn{
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
 
 .contactForm{
   height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 2rem;
   /* align-content: center; */
   background-color: #191919;
@@ -177,15 +203,25 @@ input:-webkit-autofill:focus{
   background-color: rgba(255, 255, 255, 0.2);
 }
 .ui-input .input + label::after {
-  transform: scaleX(0);
-  transform-origin: left;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: -webkit-transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
   background-color: #6EB1FF;
   height: 2px;
 }
 .ui-input .input + label span {
   position: relative;
   color: rgba(255, 255, 255, 0.2);
+  -webkit-transition: color 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: color 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: color 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .ui-input .input + label span::after {
@@ -193,17 +229,26 @@ input:-webkit-autofill:focus{
   position: absolute;
   overflow: hidden;
   left: 0;
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
   white-space: nowrap;
   color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #4A90E2), color-stop(0%, rgba(255, 255, 255, 0)));
+  background-image: -o-linear-gradient(left, #4A90E2 50%, rgba(255, 255, 255, 0) 0%);
   background-image: linear-gradient(to right, #4A90E2 50%, rgba(255, 255, 255, 0) 0%);
   background-position: 100% 50%;
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  backface-visibility: hidden;
-  perspective: 1000;
-  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: background-position 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: background-position 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: background-position 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
@@ -211,13 +256,19 @@ input:-webkit-autofill:focus{
 .ui-input .input.error + label::after,
 .ui-input .input:invalid + label::after,
 .ui-input .input.filled + label::after {
-  transform: scaleX(1);
-  transform-origin: left;
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 .ui-input .input:focus + label span::after,
 .ui-input .input.error + label span::after,
 .ui-input .input:invalid + label span::after,
 .ui-input .input.filled + label span::after {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, white), color-stop(0%, rgba(255, 255, 255, 0)));
+  background-image: -o-linear-gradient(left, white 50%, rgba(255, 255, 255, 0) 0%);
   background-image: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 0%);
   background-position: 0% 50%;
 }
@@ -229,6 +280,8 @@ input:-webkit-autofill:focus{
   background-color: #ffffff;
 }
 .ui-input .input.filled + label span::after {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ffffff), color-stop(0%, rgba(255, 255, 255, 0)));
+  background-image: -o-linear-gradient(left, #ffffff 50%, rgba(255, 255, 255, 0) 0%);
   background-image: linear-gradient(to right, #ffffff 50%, rgba(255, 255, 255, 0) 0%);
   background-position: 0% 50%;
 }
@@ -240,6 +293,8 @@ input:-webkit-autofill:focus{
   background-color: #6EB1FF;
 }
 .ui-input .input:focus + label span::after {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #6EB1FF), color-stop(0%, rgba(255, 255, 255, 0)));
+  background-image: -o-linear-gradient(left, #6EB1FF 50%, rgba(255, 255, 255, 0) 0%);
   background-image: linear-gradient(to right, #6EB1FF 50%, rgba(255, 255, 255, 0) 0%);
   background-position: 0% 50%;
 }
@@ -248,13 +303,19 @@ input:-webkit-autofill:focus{
 .ui-input input.error + label::after,
 .ui-input input:invalid + label::after,
 .ui-input input.filled + label::after {
-  transform: scaleX(1);
-  transform-origin: left;
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 .ui-input input:focus + label span::after,
 .ui-input input.error + label span::after,
 .ui-input input:invalid + label span::after,
 .ui-input input.filled + label span::after {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, white), color-stop(0%, rgba(255, 255, 255, 0)));
+  background-image: -o-linear-gradient(left, white 50%, rgba(255, 255, 255, 0) 0%);
   background-image: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 0%);
   background-position: 0% 50%;
 }
@@ -266,6 +327,8 @@ input:-webkit-autofill:focus{
   background-color: #ffffff;
 }
 .ui-input input.filled + label span::after {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ffffff), color-stop(0%, rgba(255, 255, 255, 0)));
+  background-image: -o-linear-gradient(left, #ffffff 50%, rgba(255, 255, 255, 0) 0%);
   background-image: linear-gradient(to right, #ffffff 50%, rgba(255, 255, 255, 0) 0%);
   background-position: 0% 50%;
 }
@@ -277,6 +340,8 @@ input:-webkit-autofill:focus{
   background-color: #6EB1FF;
 }
 .ui-input input:focus + label span::after {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #6EB1FF), color-stop(0%, rgba(255, 255, 255, 0)));
+  background-image: -o-linear-gradient(left, #6EB1FF 50%, rgba(255, 255, 255, 0) 0%);
   background-image: linear-gradient(to right, #6EB1FF 50%, rgba(255, 255, 255, 0) 0%);
   background-position: 0% 50%;
 }
@@ -291,6 +356,8 @@ input:-webkit-autofill:focus{
 }
 .ui-input input.error + label span::after,
 .ui-input input:invalid + label span::after {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #E66161), color-stop(0%, rgba(255, 255, 255, 0)));
+  background-image: -o-linear-gradient(left, #E66161 50%, rgba(255, 255, 255, 0) 0%);
   background-image: linear-gradient(to right, #E66161 50%, rgba(255, 255, 255, 0) 0%);
   background-position: 0% 50%;
 }
@@ -310,9 +377,14 @@ input:-webkit-autofill:focus{
 
 .form-footer{
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .btn {
@@ -328,13 +400,17 @@ input:-webkit-autofill:focus{
   font-family: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-radius: 20px;
   outline: 0;
+  -webkit-transition: background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1), color 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1), color 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1), color 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 #resetButton{
   background: #aaa1;
   /* margin: 0 50px 0 0; */
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 #resetButton:hover{
@@ -348,36 +424,59 @@ input:-webkit-autofill:focus{
 }
 
 .__first, .__second, .__third, .__fourth {
-  animation-name: fadeIn;
-  animation-duration: 180ms;
-  animation-fill-mode: both;
-  animation-iteration-count: 1;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 180ms;
+          animation-duration: 180ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 .__first {
-  animation-delay: 0;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
 }
 
 .__second {
-  animation-delay: 80ms;
+  -webkit-animation-delay: 80ms;
+          animation-delay: 80ms;
 }
 
 .__third {
-  animation-delay: 180ms;
+  -webkit-animation-delay: 180ms;
+          animation-delay: 180ms;
 }
 
 .__fourth {
-  animation-delay: 360ms;
+  -webkit-animation-delay: 360ms;
+          animation-delay: 360ms;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translate3d(0, -25%, 0);
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
   }
   to {
     opacity: 1;
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
 }
 .yes{

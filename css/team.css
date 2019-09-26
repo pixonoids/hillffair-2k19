@@ -1,8 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
   cursor: default;
 }
@@ -25,7 +28,10 @@ body {
 
 header {
   height: 4em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E91E63), to(#9C27B0));
+  background: -o-linear-gradient(#E91E63, #9C27B0);
   background: linear-gradient(#E91E63, #9C27B0);
+  position: -webkit-sticky;
   position: sticky;
   top: -2.5em;
   z-index: 2;
@@ -51,6 +57,7 @@ header .logo {
 .nav {
   text-align: center;
   color: black;
+  position: -webkit-sticky;
   position: sticky;
   background: #191919;
   padding: 1rem;
@@ -81,7 +88,9 @@ header .logo {
   color: #bbbb;
   font-weight: 700;
   white-space: nowrap;
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .usr_type:hover + .container {
   color: #da2361;
@@ -92,9 +101,14 @@ header .logo {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 25px;
 }
 .container .info {
@@ -111,18 +125,24 @@ header .logo {
 .container .card .pic {
   width: 100%;
   overflow: hidden;
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 .container .card .pic:hover {
-  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 .container .card .pic img {
   width: 100%;
   height: 100%;
-  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 .container .card .pic img:hover {
-  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 .container .card .cap {
   height: 3.5em;
@@ -132,13 +152,18 @@ header .logo {
   overflow: hidden;
 }
 .container .card .cap:hover + .card {
-  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 .container .card .cap .con {
-  transform: translate(0, -3.5em);
+  -webkit-transform: translate(0, -3.5em);
+      -ms-transform: translate(0, -3.5em);
+          transform: translate(0, -3.5em);
 }
 .container .card .cap .con:hover {
-  transform: translate(0, 0em);
+  -webkit-transform: translate(0, 0em);
+      -ms-transform: translate(0, 0em);
+          transform: translate(0, 0em);
 }
 .container .card .cap .usr_name {
   font-weight: 700;
@@ -161,7 +186,8 @@ header .logo {
   line-height: 3.5em;
 }
 .container .card:hover + .pic {
-  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 .blank_space {
@@ -187,7 +213,9 @@ footer {
 
   .usr_type {
     display: block;
-    transform: none;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
     bottom: 0;
     margin: 10px 0 10px 50px;
   }
@@ -197,5 +225,3 @@ footer {
 
   }
 }
-
-/*# sourceMappingURL=team.css.map */

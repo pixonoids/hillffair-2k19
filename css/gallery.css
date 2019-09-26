@@ -58,7 +58,8 @@
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
 }
 .slideshow .slick-dots {
   position: fixed;
@@ -69,7 +70,8 @@
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
   left: auto;
   color: #fff;
   display: block;
@@ -100,7 +102,10 @@
   right: 0;
   left: auto;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   opacity: 0.6;
 }
@@ -124,7 +129,8 @@
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   z-index: 10;
   /* background-color: #0000005b; */
   /* padding: 2rem; */
@@ -165,7 +171,9 @@
   letter-spacing: .3rem;
   top: 1rem;
   left: 50%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   color: white;
   font-size: 3rem;
   font-weight: bold;
