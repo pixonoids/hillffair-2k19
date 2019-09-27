@@ -6,16 +6,16 @@ body {
   min-height: 100vh;
   height: auto;
   font-family: "Roboto", sans-serif;
-  background-color: #D14E17;
+  background: linear-gradient(red,black);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #half{
@@ -54,14 +54,15 @@ body {
   height: 100%;
 }
 .container .container-forms .container-info {
+  background: linear-gradient(black,red);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100%;
 }
 .container .container-forms .container-info .info-item {
@@ -148,9 +149,9 @@ body {
 
 .contactForm{
   height: 100%;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -368,7 +369,7 @@ input:-webkit-autofill:focus{
 }
 
 .invalid-message{
-	position: absolute;
+  position: absolute;
     font-size: 0.7em;
     color: red;
     top: -0.9rem;
@@ -480,7 +481,7 @@ input:-webkit-autofill:focus{
   }
 }
 .yes{
-	-webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
     -ms-transform: translateX(-50%) translateY(-50%) scale(1);
     transform: translateX(-50%) translateY(-50%) scale(1);
     display: block;

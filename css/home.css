@@ -15,7 +15,7 @@
 }
 @font-face{
   font-family: ScaryHalloweenFont;
-  src: url("../fonts/ScaryHalloweenFont.ttf") format("ttf");
+  src: url("../fonts/ScaryHalloweenFont.ttf") format("truetype");
 }
 
 @font-face{
@@ -538,8 +538,8 @@ background-repeat: no-repeat;
   font-size: 3em;
   font-weight: 700;
   position: absolute;
-  font-family: RiseInsidE;
-  letter-spacing: .3rem;
+  font-family: ScaryHalloweenFont;
+  letter-spacing: .1rem;
   top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -570,8 +570,8 @@ background-repeat: no-repeat;
   transition: all .5s;
   -webkit-box-shadow: 0px 2px 18px #000000;
           box-shadow: 0px 2px 18px #000000;
-  font-family: RiseInsidE;
-  letter-spacing: .4rem;
+  font-family: ScaryHalloweenFont;
+  letter-spacing: 0rem;
 }
 
 .galleryLink:hover{
@@ -752,6 +752,8 @@ background-repeat: no-repeat;
   cursor: pointer;
   font-family: Crucifixion;
   font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s;
   letter-spacing: .3rem;
 }
 
@@ -759,6 +761,10 @@ background-repeat: no-repeat;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.i:hover{
+  filter: saturate(150%);
 }
 
 .made{

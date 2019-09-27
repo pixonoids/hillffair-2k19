@@ -202,13 +202,15 @@
 }
 .menu ul li{
   list-style: none;
+  text-align: center;
 }
 
 .menu ul li a{
   padding: 10px;
+  text-align: center;
   display: inline-block;
   font-family: RiseInside;
-  font-size: 1.5em;
+  font-size: 2em;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
