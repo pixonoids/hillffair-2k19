@@ -23,7 +23,7 @@
 }
 
 body {
-  background: #191919;
+  background: linear-gradient(#42275a,#734b6d);
 }
 
 header {
@@ -47,7 +47,8 @@ header .logo {
 .team {
   height: 2.5em;
   font-size: 6em;
-  color: white;
+  color: #ffffff;
+  background: #291937ab;
   text-align: center;
   line-height: 2.5em;
   font-family: "kaushan script";
@@ -59,7 +60,7 @@ header .logo {
   color: black;
   position: -webkit-sticky;
   position: sticky;
-  background: #191919;
+  background: #0006;
   padding: 1rem;
   top: 0;
   z-index: 3;
@@ -68,7 +69,7 @@ header .logo {
   display: inline-block;
   width: 250px;
   font-size: 1em;
-  color: #e01f6c;
+  color: #ffbf00;
   text-align: center;
 }
 .nav li a {
@@ -85,12 +86,12 @@ header .logo {
   width: 5em;
   display: inline-block;
   bottom: -150px;
-  color: #bbbb;
+  color: #ffbf0091;
   font-weight: 700;
   white-space: nowrap;
   -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 .usr_type:hover + .container {
   color: #da2361;
@@ -169,7 +170,7 @@ header .logo {
   font-weight: 700;
   padding: 0.25em;
   height: 1.5em;
-  color: crimson;
+  color: #fff;
 }
 .container .card .cap .desc {
   color: #888;
@@ -181,7 +182,7 @@ header .logo {
 .container .card .cap .num {
   height: 3.5em;
   font-weight: 700;
-  background: #ed143ddd;
+  background: #ffc107b8;
   color: white;
   line-height: 3.5em;
 }

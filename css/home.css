@@ -13,6 +13,16 @@
   font-family: Crucifixion;
   src: url("../fonts/Crucifixion-Regular.woff") format("woff");
 }
+@font-face{
+  font-family: ScaryHalloweenFont;
+  src: url("../fonts/ScaryHalloweenFont.ttf") format("ttf");
+}
+
+@font-face{
+  font-family: CFHalloween;
+  src: url("../fonts/CFHalloween-Regular.ttf") format("truetype");
+}
+
 
 @-webkit-keyframes movex {
   from {
@@ -40,6 +50,10 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+html{
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -215,11 +229,11 @@ background-repeat: no-repeat;
 }
 
 .overlay .minor{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: .2rem;
   text-align: center;
-  font-family: "kaushan script",roboto,arial;
+  font-family: RiseInside;
   margin-bottom: .5rem;
 }
 
@@ -228,8 +242,10 @@ background-repeat: no-repeat;
   margin: auto;
   background-color: #222;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
+  font-family: RiseInside;
+  letter-spacing: 0.2rem;
   text-align: center;
   border-radius: 4px;
   -webkit-transition: all 0.4s;
@@ -381,11 +397,12 @@ background-repeat: no-repeat;
 
 .aboutCon{
   position: relative;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: RiseInside;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -541,7 +558,7 @@ background-repeat: no-repeat;
   font-weight: bold;
   position: absolute;
   bottom: 15%;
-  font-size: 2.5rem;
+  font-size: 2rem;
   border-radius: 10px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
@@ -781,7 +798,7 @@ background-repeat: no-repeat;
 
   .aboutCon{
     width: 100%;
-    text-align: center;
+    text-align: justify;
     font-size: .8rem;
   }
 
@@ -820,8 +837,11 @@ background-repeat: no-repeat;
   }
   .overlay p {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: GypsyCurse;
+  }
+  .overlay .minor{
+    font-size: 1rem;
   }
 
   .pixologo {
