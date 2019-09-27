@@ -575,8 +575,8 @@ background-repeat: no-repeat;
 }
 
 .galleryLink:hover{
-  background-color: white;
-  color: #191919;
+  background-color: #f8e571;
+  color: black;
 }
 .p3{
     padding: 0;

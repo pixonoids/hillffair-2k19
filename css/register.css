@@ -41,6 +41,11 @@ body {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+
+.desc{
+  margin: 20px auto;
+}
+
 .container .box {
   position: absolute;
   left: 0;
