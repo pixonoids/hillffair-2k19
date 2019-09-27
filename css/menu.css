@@ -222,10 +222,11 @@
   transition: all 0.5s;
   color: #ffffff;
 }
+
 .menu ul li a:hover{
-  background: #FFFC8533;
-  border-radius: 20px;
-  color: #000;
+  /* background: #ee0000; */
+  /* border-radius: 10px; */
+  color: #e00;
 }
 
 .spookyCon{
