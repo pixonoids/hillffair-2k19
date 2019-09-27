@@ -763,9 +763,9 @@ background-repeat: no-repeat;
 
 .made{
   cursor: pointer;
-  font-family: RiseInsidE;
-  letter-spacing: .2rem;
-  font-weight: bold;
+  font-family: roboto;
+  letter-spacing: .1rem;
+  font-weight: 300;
   font-size: 1rem;
 }
 /* .footer .social  > *{
@@ -939,9 +939,9 @@ background-repeat: no-repeat;
   .made{
     font-family: roboto;
     letter-spacing: 0;
-
+    font-weight: 200;
     margin: 1rem 0;
     font-size: 0.8rem;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
   }
 }

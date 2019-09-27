@@ -23,7 +23,7 @@
 // // function noScroll() {
 // //   window.scrollTo(0, 0);
 // // }
-
+var Btn = document.querySelector('.navicon');
 var toggleBtn = document.querySelector('#nav-icon2');
 			var menu = document.querySelectorAll('.menu');
 			let navbarActive = false;
@@ -32,6 +32,7 @@ var toggleBtn = document.querySelector('#nav-icon2');
 				console.log('clicked open');
 				menu[0].style.left = '0';
 				toggleBtn.classList.add('open');
+				Btn.classList.add('white');
 				navbarActive =true;
 				// window.addEventListener('scroll', noScroll);
 			}  else{
@@ -40,6 +41,7 @@ var toggleBtn = document.querySelector('#nav-icon2');
 				navbarActive=false;
 				menu[0].style.left = '-100%';
 				toggleBtn.classList.remove('open');
+				Btn.classList.remove('white');
 				// window.removeEventListener('scroll', noScroll);
 			}
 			}

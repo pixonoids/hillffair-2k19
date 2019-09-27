@@ -31,9 +31,9 @@
   z-index: 100;
   color: black;
   background-color: transparent;
-	width: 3rem;
-	height: 3rem;
-	margin: 2rem;
+  width: 3rem;
+  height: 3rem;
+  margin: 2rem;
 }
 
 .navicon{
@@ -166,17 +166,27 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   z-index: 9999;
-  background-color:  #E05912;
+  background: linear-gradient(to right,red,black,black);
 }
 .menu.active{
   left: 0;
   overflow: auto;
 }
+
+/* .menu .back{
+  position: absolute;
+  left: 0;
+  background: transparent;
+  width: 50%;
+  /* box-shadow: 10px 0px 5px 3px #0002; */02 */
+  height: 100%;
+} */
+
 .menu ul{
   margin: 0;
   padding: 0;
@@ -197,8 +207,8 @@
 .menu ul li a{
   padding: 10px;
   display: inline-block;
-  font-family: verdana;
-  font-size: 2em;
+  font-family: RiseInside;
+  font-size: 1.5em;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
@@ -323,12 +333,12 @@
 
 .shadow {
   margin: -90px auto 0;
-  background: #252c49;
+  background: #000000de;
   width: 180px;
   height: 40px;
   border-radius: 50%;
   -webkit-animation: zoomy 2s infinite;
-          animation: zoomy 2s infinite;
+  animation: zoomy 2s infinite;
 }
 
 @-webkit-keyframes floaty {
@@ -432,6 +442,13 @@ li:hover::after,li:hover::before{
   #nav-icon2.open span:nth-child(6) {
     left: calc(50% - 3px);
     top: 15px;
+  }
+
+  .menu .back{
+    display: none;
+  }
+  .menu{
+    background: black;
   }
 
   .spookyCon{
