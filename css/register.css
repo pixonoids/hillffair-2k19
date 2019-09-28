@@ -1,5 +1,31 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
+
+@font-face {
+  font-family: GypsyCurse;
+  src: url("../fonts/GypsyCurse.woff") format("woff");
+  /* IE6-IE8 */
+}
+
+@font-face{
+  font-family: RiseInsidE;
+  src: url("../fonts/RiseInsidE-Regular.woff") format("woff");
+}
+
+@font-face{
+  font-family: Crucifixion;
+  src: url("../fonts/Crucifixion-Regular.woff") format("woff");
+}
+@font-face{
+  font-family: ScaryHalloweenFont;
+  src: url("../fonts/ScaryHalloweenFont.ttf") format("truetype");
+}
+@font-face{
+  font-family: kaushan_script;
+  src: url("../fonts/KaushanScript-Regular.otf") format("otf");
+}
+
+
 body {
   width: 100vw;
   min-height: 100vh;
@@ -42,9 +68,6 @@ body {
   transition: all 0.5s;
 }
 
-.desc{
-  margin: 20px auto;
-}
 
 .container .box {
   position: absolute;
@@ -95,10 +118,23 @@ body {
 }
 
 .info-item img{
-  width: 50%;
+  width: 40%;
   -o-object-fit: contain;
      object-fit: contain;
   margin: 1.5rem 0;
+}
+
+#heading{
+  font-family: ScaryHalloweenFont;
+}
+
+.hillffairDate{
+  font-family: RiseInside;
+}
+
+.desc{
+  margin: 20px auto;
+  font-family: RiseInside;
 }
 
 .container .container-form {
