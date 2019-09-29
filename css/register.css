@@ -461,7 +461,7 @@ input:-webkit-autofill:focus{
 
 .btn:focus, .btn:active,
 .btn:hover {
-  background-color: #6EB1FF;
+  background-color: #f93c00;
   color: white;
 }
 
