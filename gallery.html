@@ -58,57 +58,101 @@
 
 
 
-    <div class="galleryHeading">
+<!--     <div class="galleryHeading">
         Gallery
-    </div>
+    </div> -->
     <div class="split-slideshow">
         <div class="slideshow">
-            <div class="slider">
-            <div class="item">
-                <img src="./images/slider/galleryimg1.jpg" />
+            <div class="slider" id="lap">
+                <div class="item">
+                    <img src="./images/slider/g1.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/g2.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/g3.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/g4.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/g5.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/g6.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/g7.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/g8.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/g9.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/g10.jpg" />
+                </div>
             </div>
-            <div class="item">
-                <img src="./images/slider/galleryimg2.jpg" />
+
+            <div class="slider mob">
+                <div class="item">
+                    <img src="./images/slider/m1.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/g2.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/m3.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/g4.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/m5.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/m6.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/m7.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/g8.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/g9.jpg" />
+                </div>
+                <div class="item">
+                    <img src="./images/slider/g10.jpg" />
+                </div>
             </div>
-            <div class="item">
-                <img src="./images/slider/galleryimg3.jpg" />
-            </div>
-            <div class="item">
-                <img src="./images/slider/galleryimg4.jpg" />
-            </div>
-            <div class="item">
-                <img src="./images/slider/galleryimg5.jpg" />
-            </div>
-            <div class="item">
-                <img src="./images/slider/galleryimg6.jpg" />
-            </div>
-            <div class="item">
-                <img src="./images/slider/galleryimg7.jpg" />
-            </div>
-            <div class="item">
-                <img src="./images/slider/galleryimg8.jpg" />
-            </div>
-            <div class="item">
-                <img src="./images/slider/galleryimg9.jpg" />
-            </div>
-            <div class="item">
-                <img src="./images/slider/galleryimg10.jpg" />
-            </div>
-            </div>
+
         </div>
         <div class="slideshow-text">
+            <div class="item">RHYTHM</div>
+            <div class="item">DRAMA</div>
+            <div class="item black">NATI</div>
             <div class="item">EXHILARATION</div>
-            <div class="item">ART</div>
-            <div class="item black">DRAMA</div>
-            <div class="item">PASSION</div>
-            <div class="item">CAMERA</div>
-            <div class="item">MUSIC</div>
-            <div class="item">RYTHM</div>
+            <div class="item">EDM</div>
+            <div class="item">FASHION</div>
             <div class="item">LIGHTS</div>
             <div class="item">PASSION</div>
-            <div class="item">ROMANCE</div>
+            <div class="item">MUSIC</div>
+            <div class="item">LIVES</div>
         </div>
     </div>
+
+    <script>
+        if(window.innerWidth<=980){
+            var lap = document.getElementById('lap');
+            lap.parentElement.removeChild(lap);
+
+    }
+
+    </script>
+
     <script src="js/menu.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>

@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   height: auto;
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(red,black);
+  background: linear-gradient(#FF5722,#000);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,7 +82,7 @@ body {
   height: 100%;
 }
 .container .container-forms .container-info {
-  background: linear-gradient(black,red);
+  background: linear-gradient(#000,#FF5722);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,7 +431,7 @@ input:-webkit-autofill:focus{
 
 .btn {
   border: 0;
-  background-color: #50617A;
+  background-color: #ff5722ba;
   padding: 1.5rem 2rem;
   font-size: 14px;
   line-height: 1.5;

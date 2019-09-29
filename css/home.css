@@ -222,7 +222,7 @@ background-repeat: no-repeat;
 }
 .overlay p {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   transform: scale(1.2,1);
   font-family: GypsyCurse;
   margin: 1.4rem 0;
@@ -409,6 +409,7 @@ background-repeat: no-repeat;
 .aboutCon{
   position: relative;
   font-size: 1.1rem;
+  word-spacing: 0.4rem;
   line-height: 1.4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -761,8 +762,10 @@ background-repeat: no-repeat;
 .i{
   width: 10%;
   cursor: pointer;
-  font-family: Crucifixion;
-  font-size: 1rem;
+  font-family: RiseInside;
+  font-size: 0.7rem;
+  text-align: center;
+  align-self: center;
   font-weight: 600;
   transition: all 0.3s;
   letter-spacing: .3rem;
