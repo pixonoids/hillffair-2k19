@@ -25,6 +25,7 @@
 // // }
 var Btn = document.querySelector('.navicon');
 var toggleBtn = document.querySelector('#nav-icon2');
+var crosses = document.querySelectorAll('#nav-icon2 span');
 			var menu = document.querySelectorAll('.menu');
 			let navbarActive = false;
 			function navbar(){
@@ -32,7 +33,10 @@ var toggleBtn = document.querySelector('#nav-icon2');
 				console.log('clicked open');
 				menu[0].style.left = '0';
 				toggleBtn.classList.add('open');
-				Btn.classList.add('white');
+				// Btn.classList.add('white');
+				crosses.forEach(c=>{
+					c.style.background='#fff';
+				})
 				navbarActive =true;
 				// window.addEventListener('scroll', noScroll);
 			}  else{
