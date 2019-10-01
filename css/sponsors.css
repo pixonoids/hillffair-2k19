@@ -101,7 +101,7 @@ h2{
 
 
 
-.sponsors{
+.sponsers{
 	padding: 45px;
 	display: flex;
 	justify-content: space-around;
@@ -123,9 +123,15 @@ h2{
 
 .spon {
 	width: 300px;
-	height: auto;
+	height: 300px;
 	margin: 40px;
 	border-radius: 20px;
 	box-shadow: 0 0 4px 2px #0003;
 	padding: 10px;
+	position: relative;
+}
+
+.spon img{
+	width: 100%;
+	height: 100%;
 }
