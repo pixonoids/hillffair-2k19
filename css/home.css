@@ -788,52 +788,37 @@ background-repeat: no-repeat;
   letter-spacing: .1rem;
   font-weight: 300;
   font-size: 1rem;
+  position: relative;
+  transition: all 0.3s;
+  text-align: center;
 }
-/* .footer .social  > *{
-  width: 100px;
-  height: 100px;
-  background: red;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .dec{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
+.made::after{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  height: 1px;
+  background: white;
+  width: 0%;
+  transition: all 0.3s;
+  text-align: center;
 }
 
-.deco{
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  overflow: visible;
-  background-size: contain;
-  background-repeat: no-repeat;
+.made:hover::after{
+  content: "";
+  width: 100%;
 }
 
-.d1{
-  background: url('../images/elements/ghost.svg');
-  bottom: -20px;
-  right: 50%;
-  transform: translate(50%,0);
-  width: 40px;
-  height: 50px; 
-} */
-/* .d2{
-  background: url('../images/elements/hat.svg');
-  bottom: -20px;
-  left: -20px;
-  transform: rotate(30deg);
-} */
+.heart{
+  color: red;
+  display: inline-block;
+  animation: pulse 1s infinite alternate;
+}
 
+@keyframes pulse{
+  0%{ transform: scale(0.5);}
+  100%{ transform: scale(2);}
 
+}
 
 @media only screen and (max-width: 980px) {
 
