@@ -30,9 +30,10 @@ body {
 	background-size: 100% 100%;
 	font-size: 16px;
 	text-align: center;
- 	background-attachment: fixed;
+	background: #fff;
+	background-attachment: fixed;
  	/*changed*/
- 	font-family: Carson, 'Trebuchet MS', sans-serif;
+	font-family: Carson, 'Trebuchet MS', sans-serif;
 }
 ul{
 	list-style: none;
@@ -53,6 +54,7 @@ a{
 	color: #fff;
 	padding: 8% 2% 8%*/
 }
+/* 
 h1{
 	margin-top: 4rem;
 	font-family: Josefin Sans;
@@ -60,7 +62,45 @@ h1{
 h2{
 	margin-top: 2rem;
 	font-family: Josefin Sans;
+} */
+
+.header{
+	height: 7rem;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 2px 3px 2px #0003;
 }
+
+.hill{
+	position: absolute;
+	color: orange;
+	background: #000;
+	font-weight: 600;
+	width: 100vw;
+}
+
+.sp{
+	font-size: 3rem;
+	line-height: 8rem;
+	font-weight: 600;
+	background: #FF9800;
+	overflow: hidden;
+	color: #2b2923;
+}
+
+.sec{
+	margin: 10px auto;
+	color: black;
+	font-family: RiseInside;
+	margin-top: 3rem;
+	/* background: #1500ff1a; */
+	padding: 0.5rem;
+	width: 50%;
+	border-bottom: 1px solid orange;
+}
+
+
+
 .sponsors{
 	padding: 45px;
 	display: flex;
@@ -84,6 +124,8 @@ h2{
 .spon {
 	width: 300px;
 	height: auto;
-	
 	margin: 40px;
+	border-radius: 20px;
+	box-shadow: 0 0 4px 2px #0003;
+	padding: 10px;
 }
