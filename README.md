@@ -5,7 +5,7 @@ It is cultural fest website of our college. All details of club events and regis
 <img src="ss/1.png" widt="100%">
 
 ---
-<img src="ss/1.png" widt="100%">
+<img src="ss/2.png" widt="100%">
 
 ---
 ![](ss/3.gif)
